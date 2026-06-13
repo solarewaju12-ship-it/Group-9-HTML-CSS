@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <h2 class="logo">📚 E-Library</h2>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="members.html">Members</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+    <header class="topbar">
+      <h1>Members</h1>
+    </header>
+
+    <section class="member-form-section">
+
+      <form class="member-form" id="memberForm">
+
+        <input type="text" placeholder="Full Name">
+
+        <input type="email" placeholder="Email Address">
+
+        <button type="submit">Register Member</button>
+
+      </form>
+
+      </section>
+
+    <section class="table-section">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>john@gmail.com</td>
+            <td>Active</td>
+          </tr>
+
+          <tr>
+            <td>Sarah James</td>
+            <td>sarah@gmail.com</td>
+            <td>Borrowed</td>
+            </tr>
+        </tbody>
+      </table>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
