@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <h2 class="logo">📚 E-Library</h2>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="members.html">Members</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+
+     <header class="topbar">
+      <h1>Books Libraryss</h1>
+
+      <form class="search-form">
+        <input type="text" placeholder="Search by title">
+        <button type="submit">Search</button>
+      </form>
+    </header>
+
+    <section class="books-grid">
+
+      <div class="book-card">
+        <img src="python.jpg" alt="book">
+        <h3>Python Fundamentals</h3>
+        <button class="open-modal">Read More</button>
+      </div>
+
+      <div class="book-card">
+        <img src="css.jpg" alt="book">
+        <h3>CSS Mastery</h3>
+        <button class="open-modal">Read More</button>
+      </div>
+
+       <div class="book-card">
+        <img src="react.jpg" alt="book">
+        <h3>React Essentials</h3>
+        <button class="open-modal">Read More</button>
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close-btn"> &times </span>
+
+    <h2>Book Details</h2>
+    <p>Book summary and borrowing information.</p>
+
+    <button>Borrow</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

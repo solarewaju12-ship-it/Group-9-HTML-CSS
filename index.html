@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Library Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2 class="logo">📚 E-Library</h2>
+
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="members.html">Members</a></li>
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h1>Dashboard</h1>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search books...">
+            </div>
+
+        </header>
+
+        <!-- Statistics -->
+        <section class="stats-grid">
+
+            <div class="card">
+                <h3>Total Books</h3>
+                <p>1250</p>
+            </div>
+
+            <div class="card">
+                <h3>Borrowed</h3>
+                <p>320</p>
+            </div>
+
+            <div class="card">
+                <h3>Members</h3>
+                <p>540</p>
+            </div>
+
+            <div class="card">
+                <h3>Available</h3>
+                <p>930</p>
+            </div>
+
+        </section>
+
+        <!-- Books -->
+        <section>
+
+            <h2 class="section-title">Recently Added Books</h2>
+
+            <div class="books-grid">
+
+                <div class="book-card">
+
+                    <img src="web.jpg" alt="Web Development">
+
+                    <h3>Web Development</h3>
+
+                    <button class="open-modal">
+                        View Details
+                    </button>
+
+                </div>
+
+                <div class="book-card">
+
+                    <img src="js.jpg" alt="JavaScript Basics">
+
+                    <h3>JavaScript Basics</h3>
+
+                    <button class="open-modal">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- Modal -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span class="close-btn">&times </span>
+
+        <h2>Book Information</h2>
+
+        <p>
+            This book teaches modern frontend development concepts.
+        </p>
+
+        <button>Borrow Book</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
